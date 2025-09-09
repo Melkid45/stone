@@ -151,6 +151,36 @@
         </div>
     </div>
     <main class="main">
+        <div class="preloader">
+            <div class="preloader__body">
+                <div class="preloader__body-text">
+                    <div class="text-h">H</div>
+                    <div class="first-words">
+                        <span>e</span>
+                        <span>l</span>
+                        <span>l</span>
+                        <span>o</span>
+                    </div>
+                    <div class="second-words">
+                        <span>a</span>
+                        <span>r</span>
+                        <span>b</span>
+                        <span>s</span>
+                        <span>t</span>
+                        <span>o</span>
+                        <span>n</span>
+                        <span>e</span>
+                    </div>
+                </div>
+                <div class="preloader__body-circle">
+                    <svg width="90" height="88" viewBox="0 0 90 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M90 43C86.6667 43 83.3333 43 80 43C80.0844 46.7865 79.579 50.5736 78.4857 54.2071C74.2717 68.8831 59.7463 80.142 44 80.25C24.1962 81.1878 5.44871 63.5387 5.5 43C4.54759 22.5291 22.7941 3.18413 44 3.25C60.7689 2.65581 77.317 14.0874 82.7657 30.4031C84.1646 34.4365 84.9182 38.6999 85 43C85.0849 38.7002 84.4979 34.3839 83.2413 30.2486C78.3956 13.5473 61.8559 0.832575 44 0.75C21.5276 -0.246161 0.390377 19.7927 0.5 43C-0.510743 66.1395 20.1255 87.8742 44 87.75C62.8785 88.3696 81.4409 75.4822 87.5213 57.1412C89.0835 52.606 89.9187 47.8134 90 43ZM80 43H90H85H80Z"
+                            fill="#242323" />
+                    </svg>
+                </div>
+            </div>
+        </div>
         <section class="hero-block">
             <div class="container">
                 <div class="hero-block__body">
@@ -186,7 +216,7 @@
         </section>
         <section class="showreel">
             <div class="showreel__body">
-                <video class="showreel__body-video" preload="auto" loop muted autoplay>
+                <video class="showreel__body-video" preload="auto" loop muted autoplay playsinline>
                     <source src="images/dist/video/Stefano Ricci x Alex Gvozdyk x WBC boxing.mp4" type="video/mp4">
                 </video>
                 <div class="showreel__body-strokes">
@@ -256,8 +286,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -281,8 +311,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -306,8 +336,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -331,110 +361,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
-                                    </video>
-                                    <button class="work-preview-play">
-                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                        Watch now
-                                    </button>
-                                </div>
-                                <div class="work-information">
-                                    <h3>
-                                        ARIS
-                                    </h3>
-                                    <p>
-                                        Commercial video-content for bet company with Mickey Rourke
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="works-frame-sction">
-                            <a href="" class="work transform-item" data-video-playing="false">
-                                <div class="work-preview">
-                                    <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
-                                    </video>
-                                    <button class="work-preview-play">
-                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                        Watch now
-                                    </button>
-                                </div>
-                                <div class="work-information">
-                                    <h3>
-                                        MelBet
-                                    </h3>
-                                    <p>
-                                        Commercial video-content for bet company with Mickey Rourke
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="" class="work transform-item" data-video-playing="false">
-                                <div class="work-preview">
-                                    <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
-                                    </video>
-                                    <button class="work-preview-play">
-                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                        Watch now
-                                    </button>
-                                </div>
-                                <div class="work-information">
-                                    <h3>
-                                        ARIS
-                                    </h3>
-                                    <p>
-                                        Commercial video-content for bet company with Mickey Rourke
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="" class="work transform-item" data-video-playing="false">
-                                <div class="work-preview">
-                                    <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
-                                    </video>
-                                    <button class="work-preview-play">
-                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                        Watch now
-                                    </button>
-                                </div>
-                                <div class="work-information">
-                                    <h3>
-                                        MelBet
-                                    </h3>
-                                    <p>
-                                        Commercial video-content for bet company with Mickey Rourke
-                                    </p>
-                                </div>
-                            </a>
-                            <a href="" class="work transform-item" data-video-playing="false">
-                                <div class="work-preview">
-                                    <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -460,8 +388,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -485,8 +413,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -510,8 +438,8 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/1.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -535,8 +463,110 @@
                             <a href="" class="work transform-item" data-video-playing="false">
                                 <div class="work-preview">
                                     <img class="preview-image" src="images/dist/works/2.png" alt="">
-                                    <video class="preview-video" preload="metadata" loop muted>
-                                        <source src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="work-preview-play">
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                                                fill="#FEFEFE" />
+                                        </svg>
+                                        Watch now
+                                    </button>
+                                </div>
+                                <div class="work-information">
+                                    <h3>
+                                        ARIS
+                                    </h3>
+                                    <p>
+                                        Commercial video-content for bet company with Mickey Rourke
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="works-frame-sction">
+                            <a href="" class="work transform-item" data-video-playing="false">
+                                <div class="work-preview">
+                                    <img class="preview-image" src="images/dist/works/1.png" alt="">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="work-preview-play">
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                                                fill="#FEFEFE" />
+                                        </svg>
+                                        Watch now
+                                    </button>
+                                </div>
+                                <div class="work-information">
+                                    <h3>
+                                        MelBet
+                                    </h3>
+                                    <p>
+                                        Commercial video-content for bet company with Mickey Rourke
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="" class="work transform-item" data-video-playing="false">
+                                <div class="work-preview">
+                                    <img class="preview-image" src="images/dist/works/2.png" alt="">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="work-preview-play">
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                                                fill="#FEFEFE" />
+                                        </svg>
+                                        Watch now
+                                    </button>
+                                </div>
+                                <div class="work-information">
+                                    <h3>
+                                        ARIS
+                                    </h3>
+                                    <p>
+                                        Commercial video-content for bet company with Mickey Rourke
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="" class="work transform-item" data-video-playing="false">
+                                <div class="work-preview">
+                                    <img class="preview-image" src="images/dist/works/1.png" alt="">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                    </video>
+                                    <button class="work-preview-play">
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                                                fill="#FEFEFE" />
+                                        </svg>
+                                        Watch now
+                                    </button>
+                                </div>
+                                <div class="work-information">
+                                    <h3>
+                                        MelBet
+                                    </h3>
+                                    <p>
+                                        Commercial video-content for bet company with Mickey Rourke
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="" class="work transform-item" data-video-playing="false">
+                                <div class="work-preview">
+                                    <img class="preview-image" src="images/dist/works/2.png" alt="">
+                                    <video class="preview-video" loop muted>
+                                        <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
                                     </video>
                                     <button class="work-preview-play">
                                         <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
@@ -589,7 +619,7 @@
                                         dolor.</p>
                                 </div>
                                 <div class="information-tags">
-                                    <div class="information-tags-tag">
+                                    <div class="information-tags-tag current">
                                         Web Design & UX
                                     </div>
                                     <div class="information-tags-tag">
@@ -603,9 +633,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <video class="services-video" preload="metadata" loop muted>
-                                <source src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
-                            </video>
+                            <div class="wrap-services-video">
+                                <video class="services-video show-video" loop muted>
+                                    <source data-src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/VAVE - JUDD TRUMP.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
                         <div class="services-frame-item" data-video-playing="false">
                             <div class="information">
@@ -615,7 +656,7 @@
                                         dolor.</p>
                                 </div>
                                 <div class="information-tags">
-                                    <div class="information-tags-tag">
+                                    <div class="information-tags-tag current">
                                         Pre-production
                                     </div>
                                     <div class="information-tags-tag">
@@ -629,9 +670,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <video class="services-video" preload="metadata" loop muted>
-                                <source src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
-                            </video>
+                            <div class="wrap-services-video">
+                                <video class="services-video show-video" loop muted>
+                                    <source data-src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/VAVE - JUDD TRUMP.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
                         <div class="services-frame-item" data-video-playing="false">
                             <div class="information">
@@ -641,7 +693,7 @@
                                         dolor.</p>
                                 </div>
                                 <div class="information-tags">
-                                    <div class="information-tags-tag">
+                                    <div class="information-tags-tag current">
                                         Branding & Identity
                                     </div>
                                     <div class="information-tags-tag">
@@ -655,9 +707,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <video class="services-video" preload="metadata" loop muted>
-                                <source src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
-                            </video>
+                            <div class="wrap-services-video">
+                                <video class="services-video show-video" loop muted>
+                                    <source data-src="images/dist/video/DOLCE GABBANA.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/22bet_McCallum_30sec_HQ.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/ADIDAS ARIS.mp4" type="video/mp4">
+                                </video>
+                                <video class="services-video" loop muted>
+                                    <source data-src="images/dist/video/VAVE - JUDD TRUMP.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1160,6 +1223,7 @@
                 </div>
             </div>
         </footer>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
