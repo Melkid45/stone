@@ -8307,7 +8307,7 @@ a {
     }
 
     .works__body-frame .works-frame-sction .work:hover .preview-image {
-        opacity: 0
+        opacity: 1
     }
 
     .works__body-frame .works-frame-sction .work:hover .preview-video {
