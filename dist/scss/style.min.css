@@ -266,6 +266,8 @@ body {
 
 .header__menu.opened {
     max-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
 }
 
 .header__menu.opened .main-navigation ul li a {
@@ -516,6 +518,7 @@ body {
     margin-top: 64px;
     opacity: 0;
     transition: all 0.5s ease 1.4s;
+    padding-bottom: 42px;
 }
 
 .header__menu .social-navigation span {
@@ -4269,7 +4272,8 @@ a {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 32rem;
-        margin-top: 64rem
+        margin-top: 64rem;
+        padding-bottom: 42rem;
     }
 
     .header__menu .social-navigation span {
@@ -7940,7 +7944,8 @@ a {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 16rem;
-        margin-top: 24rem
+        margin-top: 24rem;
+        padding-bottom: 0;
     }
 
     .header__menu .social-navigation span {
@@ -7982,6 +7987,7 @@ a {
         margin-top: 24rem;
         opacity: 0;
         transition: all 0.5s ease 1.3s;
+        padding-bottom: 42rem;
     }
 
     .header__menu .action-logo {
@@ -11451,31 +11457,7 @@ a {
     }
 }
 
-@media(max-width: 400px) {
-    .header__menu {
-        padding: 0rem 24rem 0rem 24rem
-    }
 
-    .header__menu.opened {
-        max-height: 100vh;
-    }
-
-    .header__menu .main-navigation {
-        margin-top: 90rem
-    }
-
-    .header__menu .main-navigation ul {
-        gap: 16rem !important
-    }
-
-    .header__menu .main-navigation ul li {
-        font-size: 24rem !important
-    }
-
-    .header__menu .main-navigation ul li.accordion span {
-        font-size: 24rem !important
-    }
-}
 
 @media(max-width: 1024px)and (min-width: 620px) and (hover: none) {
     html {
@@ -11827,7 +11809,8 @@ a {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 32rem;
-        margin-top: 64rem
+        margin-top: 64rem;
+        padding-bottom: 42rem;
     }
 
     .header__menu .social-navigation span {
