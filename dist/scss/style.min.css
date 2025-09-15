@@ -3914,7 +3914,7 @@ a {
     color: inherit
 }
 
-@media(max-width: 2560px)and (min-width: 620px)and (hover: hover) {
+@media(max-width: 2560px)and (min-width: 1024px) and (hover: hover) {
     html {
         font-size: .0520833333vw
     }
