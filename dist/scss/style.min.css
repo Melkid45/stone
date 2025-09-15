@@ -1445,7 +1445,9 @@ body {
 .feedback {
     width: 100%;
     padding: 100px 0px;
-    background: var(--black)
+    background: var(--black);
+    position: relative;
+    z-index: 1;
 }
 
 .feedback__body {
