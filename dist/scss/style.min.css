@@ -116,10 +116,10 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     overflow: hidden;
     margin-right: 32px !important;
-    height: 414px;
     display: flex;
     align-items: flex-end;
     background: linear-gradient(180deg, rgba(36, 35, 35, 0) -13.81%, #242323 95.12%);
+    aspect-ratio: 4 / 3;
 }
 
 .offers__body .splide__slide img {
@@ -377,8 +377,8 @@ body::-webkit-scrollbar {
     opacity: 1
 }
 
-.header__menu.opened .main-navigation nav ul li .offset {
-    transform: translateY(0) !important
+.header__menu.opened .main-navigation nav ul li .offset span {
+    transform: translateY(0) !important;
 }
 
 .header__menu {
@@ -386,8 +386,9 @@ body::-webkit-scrollbar {
     height: 100vh;
     padding: 0 100px;
     background: var(--white);
-    flex-direction: column;
     position: fixed;
+    display: flex;
+    align-items: flex;
     top: 0;
     right: 0;
     z-index: 99;
@@ -395,7 +396,6 @@ body::-webkit-scrollbar {
     transition: all .5s ease;
     max-height: 0;
     overflow: hidden;
-    gap: 250px
 }
 
 .header__menu .menu-navigation {
@@ -408,7 +408,9 @@ body::-webkit-scrollbar {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 66px;
 }
 
 .header__menu .menu-navigation h3,
@@ -443,12 +445,18 @@ body::-webkit-scrollbar {
     -webkit-box-direction: normal;
     -ms-flex-direction: column
 }
-
+.header__menu-body{
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .header__menu .main-navigation {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    margin-top: 400px
+    max-width: max-content;
 }
 
 .header__menu .main-navigation nav ul,
@@ -457,47 +465,84 @@ body::-webkit-scrollbar {
     gap: 32px
 }
 
-.header__menu .main-navigation nav ul li {
+.header__menu .main-navigation nav ul li, .header__menu .main-navigation nav ul li .offset {
     font-family: "DM Serif Text", serif;
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 400;
     line-height: 100%;
     color: var(--black);
     overflow: hidden;
-    display: flex
+    display: flex;
 }
 
-.header__menu .main-navigation nav ul li a {
+.header__menu .main-navigation nav ul li a, .header__menu .main-navigation nav ul li .offset span {
     transform: translateY(100%)
 }
 
 .header__menu .main-navigation nav ul li:nth-child(1) a {
     transition: all .5s ease .2s
 }
-
 .header__menu .main-navigation nav ul li:nth-child(2) a {
     transition: all .5s ease .3s
 }
-
 .header__menu .main-navigation nav ul li:nth-child(3) a {
     transition: all .5s ease .4s
 }
 
-.header__menu .main-navigation nav ul li:nth-child(3) .offset {
-    transition: all .5s ease .5s;
+.header__menu .main-navigation nav ul li:nth-child(2) .offset span{
+    transition: all .5s ease .3s;
     transform: translateY(100%)
 }
 
 .header__menu .main-navigation nav ul li:nth-child(4) a {
-    transition: all .5s ease .6s
+    transition: all .5s ease .5s
 }
 
 .header__menu .main-navigation nav ul li:nth-child(5) a {
-    transition: all .5s ease .7s
+    transition: all .5s ease .6s
 }
 
 .header__menu .main-navigation nav ul li:nth-child(6) a {
     transition: all .5s ease .8s
+}
+
+.header__menu .main-navigation nav ul li.accordion .accordion-wrap ul a,
+.header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(36, 35, 35, .3764705882)
+}
+
+.header__menu .main-navigation nav ul li.accordion .accordion-wrap ul a svg,
+.header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li svg {
+    width: 24px;
+    height: 24px
+}
+
+.header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li a {
+    width: 1002px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.contact-information {
+    display: flex;
+    gap: 64px;
+    padding-bottom: 100px;
+}
+
+.contact-information-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .header__menu .start-project {
@@ -519,7 +564,7 @@ body::-webkit-scrollbar {
     font-weight: 400;
     line-height: 100%;
     color: var(--white);
-    transition: all .5s ease .7s;
+    transition: all .5s ease .4s;
     clip-path: inset(0 100%0 0)
 }
 
@@ -564,6 +609,12 @@ body::-webkit-scrollbar {
     transition: all .5s ease .7s
 }
 
+.social-navigation.social nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .header__menu .social-navigation span,
 .header__menu .soft-navigation .item span {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -578,7 +629,7 @@ body::-webkit-scrollbar {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
     font-weight: 300;
-    line-height: 140%;
+    line-height: 100%;
     color: var(--black)
 }
 
@@ -841,7 +892,7 @@ body::-webkit-scrollbar {
 }
 
 .showreel__body-partners {
-    gap: 64px;
+    gap: 120px;
     width: 100%;
     -webkit-animation: infinite 40s animPartners linear;
     animation: infinite 40s animPartners linear
@@ -3522,7 +3573,6 @@ a {
         border-radius: 30rem;
         overflow: hidden;
         margin-right: 32rem !important;
-        height: 414rem;
         display: flex;
         align-items: flex-end;
         background: linear-gradient(180deg, rgba(36, 35, 35, 0) -13.81%, #242323 95.12%);
@@ -3777,16 +3827,19 @@ a {
         z-index: 99;
         -webkit-transition: all .5s ease;
         transition: all .5s ease;
-        gap: 250rem
     }
-
+    .header__menu-body{
+        margin-top: 200rem;
+    }
     .header__menu .main-navigation,
     .header__menu .menu-navigation {
+        flex-direction: column;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         width: 100%;
-        justify-content: space-between
+        justify-content: flex-start;
+        gap: 66rem;
     }
 
     .header__menu .menu-navigation {
@@ -3822,8 +3875,8 @@ a {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: row;
-        margin-top: 400rem
+        flex-direction: column;
+        padding-bottom: 100rem;
     }
 
     .header__menu .main-navigation nav ul,
@@ -3832,7 +3885,6 @@ a {
         gap: 30rem
     }
 
-    .header__menu .main-navigation nav ul li,
     .header__menu .start-project,
     .hero-block__body .hero-block-information h1 {
         font-family: "DM Serif Text", serif;
@@ -3840,6 +3892,49 @@ a {
         font-weight: 400;
         line-height: 100%;
         color: var(--black)
+    }
+
+    .header__menu .main-navigation nav ul li, .header__menu .main-navigation nav ul li .offset {
+        font-size: 64rem;
+    }
+
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul a,
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 32rem;
+        font-weight: 600;
+        color: rgba(36, 35, 35, .3764705882)
+    }
+
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li a {
+        width: 1002rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul a svg,
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li svg {
+        width: 24rem;
+        height: 24rem
+    }
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 48rem;
+    }
+
+    .contact-information {
+        display: flex;
+        gap: 64rem;
+        padding-bottom: 100rem;
+    }
+
+    .contact-information-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 50rem;
     }
 
     .header__menu .start-project {
@@ -3894,7 +3989,7 @@ a {
         font-family: "Plus Jakarta Sans", sans-serif;
         font-size: 18rem;
         font-weight: 300;
-        line-height: 140%;
+        line-height: 100%;
         color: var(--black)
     }
 
@@ -4063,7 +4158,7 @@ a {
     }
 
     .showreel__body-partners {
-        gap: 64rem;
+        gap: 120rem;
         width: 100%;
         -webkit-animation: infinite 40s animPartners linear;
         animation: infinite 40s animPartners linear
@@ -6659,7 +6754,6 @@ a {
         border-radius: 24rem;
         overflow: hidden;
         margin-right: 16rem !important;
-        height: 220rem;
         display: flex;
         align-items: flex-end;
         background: linear-gradient(180deg, rgba(36, 35, 35, 0) -13.81%, #242323 95.12%);
@@ -6966,7 +7060,6 @@ a {
 
     .header__menu .main-navigation {
         gap: 24rem;
-        margin-top: 100rem
     }
 
     .header__menu .main-navigation nav ul {
@@ -7414,7 +7507,7 @@ a {
     }
 
     .showreel__body-partners {
-        gap: 40rem;
+        gap: 60rem;
         width: 100%;
         -webkit-animation: infinite 35s animPartners linear;
         animation: infinite 35s animPartners linear
@@ -10173,7 +10266,6 @@ a {
         border-radius: 24rem;
         overflow: hidden;
         margin-right: 24rem !important;
-        height: 320rem;
         display: flex;
         align-items: flex-end;
         background: linear-gradient(180deg, rgba(36, 35, 35, 0) -13.81%, #242323 95.12%);
@@ -10402,17 +10494,21 @@ a {
         -ms-transform: translateX(0);
         transform: translateX(0)
     }
-
+    .desk{
+        display: none !important;
+    }
+    .mob{
+        display: flex !important;
+    }
     .header__menu {
         width: 100%;
         height: 100vh;
-        padding: 0 48rem;
+        padding: 0 24rem;
         background: var(--white);
         position: fixed;
         top: 0;
         right: 0;
         z-index: 99;
-        gap: 150rem
     }
 
     .header__menu .menu-navigation {
@@ -10456,12 +10552,25 @@ a {
         -ms-flex-direction: column;
         flex-direction: column
     }
-
+    .header__menu-body {
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        margin-top: 100rem;
+    }
+    .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li a {
+        width: 100%;
+    }
     .header__menu .main-navigation {
         gap: 64rem;
-        margin-top: 128rem
+        max-width: none;
     }
-
+    .header__menu .main-navigation nav ul li.accordion .offset span {
+        font-size: 48rem;
+    }
+    .header__menu .main-navigation nav ul li.accordion {
+        gap: 48rem;
+    }
     .header__menu .main-navigation nav ul {
         gap: 48rem
     }
@@ -10706,7 +10815,7 @@ a {
     }
 
     .showreel__body-partners {
-        gap: 48rem;
+        gap: 60rem;
         width: 100%;
         -webkit-animation: infinite 25s animPartners linear;
         animation: infinite 25s animPartners linear
