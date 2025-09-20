@@ -445,13 +445,15 @@ body::-webkit-scrollbar {
     -webkit-box-direction: normal;
     -ms-flex-direction: column
 }
-.header__menu-body{
+
+.header__menu-body {
     margin-top: 200px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .header__menu .main-navigation {
     flex-direction: row;
     width: 100%;
@@ -465,7 +467,8 @@ body::-webkit-scrollbar {
     gap: 32px
 }
 
-.header__menu .main-navigation nav ul li, .header__menu .main-navigation nav ul li .offset {
+.header__menu .main-navigation nav ul li,
+.header__menu .main-navigation nav ul li .offset {
     font-family: "DM Serif Text", serif;
     font-size: 64px;
     font-weight: 400;
@@ -475,21 +478,24 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
-.header__menu .main-navigation nav ul li a, .header__menu .main-navigation nav ul li .offset span {
+.header__menu .main-navigation nav ul li a,
+.header__menu .main-navigation nav ul li .offset span {
     transform: translateY(100%)
 }
 
 .header__menu .main-navigation nav ul li:nth-child(1) a {
     transition: all .5s ease .2s
 }
+
 .header__menu .main-navigation nav ul li:nth-child(2) a {
     transition: all .5s ease .3s
 }
+
 .header__menu .main-navigation nav ul li:nth-child(3) a {
     transition: all .5s ease .4s
 }
 
-.header__menu .main-navigation nav ul li:nth-child(2) .offset span{
+.header__menu .main-navigation nav ul li:nth-child(2) .offset span {
     transition: all .5s ease .3s;
     transform: translateY(100%)
 }
@@ -3828,9 +3834,11 @@ a {
         -webkit-transition: all .5s ease;
         transition: all .5s ease;
     }
-    .header__menu-body{
-        margin-top: 200rem;
+
+    .header__menu-body {
+        margin-top: 328rem;
     }
+
     .header__menu .main-navigation,
     .header__menu .menu-navigation {
         flex-direction: column;
@@ -3894,7 +3902,8 @@ a {
         color: var(--black)
     }
 
-    .header__menu .main-navigation nav ul li, .header__menu .main-navigation nav ul li .offset {
+    .header__menu .main-navigation nav ul li,
+    .header__menu .main-navigation nav ul li .offset {
         font-size: 64rem;
     }
 
@@ -3970,7 +3979,8 @@ a {
         justify-content: space-between;
         width: 100%;
         max-width: 1264rem;
-        padding-right: 200rem
+        padding-right: 200rem;
+        display: none;
     }
 
     .header__menu .social-navigation span,
@@ -3978,8 +3988,13 @@ a {
         font-family: "Plus Jakarta Sans", sans-serif;
         font-size: 24rem;
         font-weight: 600;
-        line-height: 140%;
+        line-height: 100%;
         color: var(--black)
+    }
+
+    .header__menu .social-navigation span {
+        opacity: .6;
+        font-weight: 400;
     }
 
     .header__menu .social-navigation nav ul li,
@@ -3993,11 +4008,17 @@ a {
         color: var(--black)
     }
 
+    .header__menu .social-navigation nav ul li {
+        font-size: 32rem;
+        font-weight: 400;
+    }
+
     .header__menu .social-navigation-wrap {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        width: 100%
+        width: 100%;
+        display: none;
     }
 
     .header__menu .social-navigation,
@@ -4016,7 +4037,8 @@ a {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: 48rem
+        flex-direction: column;
+        gap: 32rem
     }
 
     .hero-block {
@@ -7020,6 +7042,24 @@ a {
         gap: 24rem
     }
 
+    .header__menu-body {
+        margin-top: 100rem;
+        gap: 24rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .accordion{
+        gap: 0rem;
+    }
+    .header__menu .main-navigation nav ul li.accordion.open span{
+        padding-bottom: 0 !important;
+    }
+    .header__menu .main-navigation nav ul li.accordion .offset{
+        transition: all 0.5s ease;
+    }
+    .header__menu .main-navigation nav ul li.accordion.open .offset{
+        padding-bottom: 30rem;
+    }
     .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul a,
     .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li,
     .header__menu .main-navigation nav ul li.accordion span,
@@ -7242,13 +7282,24 @@ a {
         -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
         justify-content: space-between !important;
-        width: 100%
+        width: 100%;
+        gap: 0;
+        flex-direction: row;
     }
 
     .header__menu .social-navigation-wrap {
-        padding-bottom: 0
+        padding-bottom: 0;
+        display: none;
     }
-
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        gap: 24rem;
+        padding-bottom: 0rem;
+    }
+    .contact-information-wrap{
+        gap: 24rem;
+    }
     .header__menu .social-navigation {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -10494,21 +10545,28 @@ a {
         -ms-transform: translateX(0);
         transform: translateX(0)
     }
-    .desk{
+
+    .desk {
         display: none !important;
     }
-    .mob{
-        display: flex !important;
+
+    .mob {
+        display: none !important;
     }
+
     .header__menu {
         width: 100%;
         height: 100vh;
-        padding: 0 24rem;
+        padding: 0 32rem;
         background: var(--white);
         position: fixed;
         top: 0;
         right: 0;
         z-index: 99;
+    }
+
+    .contact-information {
+        display: none;
     }
 
     .header__menu .menu-navigation {
@@ -10552,25 +10610,35 @@ a {
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .header__menu-body {
         display: flex;
         flex-direction: column;
-        gap: 24rem;
-        margin-top: 100rem;
+        gap: 150rem;
+        margin-top: 128rem;
     }
+
     .header__menu .main-navigation nav ul li.accordion .accordion-wrap ul li a {
         width: 100%;
     }
+
     .header__menu .main-navigation {
         gap: 64rem;
         max-width: none;
     }
+
     .header__menu .main-navigation nav ul li.accordion .offset span {
         font-size: 48rem;
     }
+
     .header__menu .main-navigation nav ul li.accordion {
-        gap: 48rem;
+        gap: 0rem;
     }
+
+    .accordion-wrap {
+        max-height: 0;
+    }
+
     .header__menu .main-navigation nav ul {
         gap: 48rem
     }
@@ -10631,7 +10699,7 @@ a {
         justify-content: space-between;
         width: 100%;
         margin-top: 87rem;
-        max-width: 712rem;
+        max-width: none;
         padding-right: 0
     }
 
@@ -10666,6 +10734,10 @@ a {
         font-weight: 300;
         line-height: 140%;
         color: var(--black)
+    }
+
+    .header__menu .social-navigation nav ul {
+        flex-direction: row;
     }
 
     .header__menu .social-navigation nav ul,
