@@ -104,7 +104,7 @@ body::-webkit-scrollbar  {
     width: 690px !important;
     padding: 48px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 60px;
     overflow: hidden;
     margin-right: 32px !important;
     display: flex;
@@ -189,14 +189,14 @@ body::-webkit-scrollbar  {
     gap: 24px;
 }
 .share__body-action a  {
-    padding: 24px 38px;
+    padding: 22px 38px 26px;
     background: transparent;
     border-radius: 60px;
     border: 1px solid var(--black);
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 120%;
     color: var(--black);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -1721,9 +1721,7 @@ body::-webkit-scrollbar  {
     fill: var(--black) !important
 }
 .team__body .splide .splide__slide  {
-    width: 388px !important;
     gap: 32px;
-    margin-right: 50px !important
 }
 .team__body .splide .splide__slide img  {
     aspect-ratio: 3/4;
@@ -3181,7 +3179,7 @@ a  {
         width: 690rem !important;
         padding: 48rem;
         position: relative;
-        border-radius: 30rem;
+        border-radius: 60rem;
         overflow: hidden;
         margin-right: 32rem !important;
         display: flex;
@@ -3262,14 +3260,14 @@ a  {
         gap: 24rem;
     }
     .share__body-action a  {
-        padding: 24rem 38rem;
+        padding: 22rem 38rem 26rem;
         background: transparent;
         border-radius: 60rem;
         border: 1rem solid var(--black);
         display: flex;
         align-items: center;
         gap: 16rem;
-        font-size: 24rem;
+        font-size: 22rem;
         line-height: 120%;
         color: var(--black);
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -4566,9 +4564,7 @@ a  {
         fill: var(--black) !important
     }
     .team__body .splide .splide__slide  {
-        width: 388rem !important;
         gap: 30rem;
-        margin-right: 50rem !important
     }
     .team__body .splide .splide__slide img  {
         aspect-ratio: 3/4;
@@ -5982,7 +5978,7 @@ a  {
         width: 300rem !important;
         padding: 16rem;
         position: relative;
-        border-radius: 24rem;
+        border-radius: 30rem;
         overflow: hidden;
         margin-right: 16rem !important;
         display: flex;
@@ -6066,14 +6062,14 @@ a  {
         flex-wrap: wrap;
     }
     .share__body-action a  {
-        padding: 24rem 34rem;
+        padding: 16rem 24rem;
         background: transparent;
-        border-radius: 52rem;
+        border-radius: 60rem;
         border: 1rem solid var(--black);
         display: flex;
         align-items: center;
         gap: 8rem;
-        font-size: 16rem;
+        font-size: 14rem;
         line-height: 120%;
         color: var(--black);
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -7618,9 +7614,7 @@ a  {
         flex-direction: column
     }
     .team__body .splide .splide__slide  {
-        width: 220rem !important;
         gap: 18rem;
-        margin-right: 24rem !important
     }
     .team__body .splide .splide__slide img  {
         -o-object-fit: cover;
@@ -8120,6 +8114,9 @@ a  {
         line-height: 140%;
         color: var(--black);
         opacity: .6
+    }
+    .project__body .project-wrap .project-more{
+        grid-column: 1;
     }
     .project__body .project-wrap .project-more  {
         font-size: 18rem;
@@ -9103,7 +9100,7 @@ a  {
         width: 460rem !important;
         padding: 24rem;
         position: relative;
-        border-radius: 24rem;
+        border-radius: 30rem;
         overflow: hidden;
         margin-right: 24rem !important;
         display: flex;
@@ -9186,9 +9183,9 @@ a  {
         gap: 12rem;
     }
     .share__body-action a  {
-        padding: 24rem 34rem;
+        padding: 16rem 24rem;
         background: transparent;
-        border-radius: 52rem;
+        border-radius: 60rem;
         border: 1rem solid var(--black);
         display: flex;
         align-items: center;
@@ -10501,9 +10498,7 @@ a  {
         fill: var(--black) !important
     }
     .team__body .splide .splide__slide  {
-        width: 240rem !important;
         gap: 18rem;
-        margin-right: 26rem !important
     }
     .team__body .splide .splide__slide img  {
         -o-object-fit: cover;
