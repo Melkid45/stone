@@ -222,13 +222,7 @@
           </nav>
         </div>
         <button class="start-project">
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 13 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.5 12L11.5 1" stroke="#FEFEFE" stroke-linejoin="round" />
             <path d="M0.5 1L11.5 1L11.5 12" stroke="#FEFEFE" />
           </svg>
@@ -236,22 +230,16 @@
         </button>
       </div>
     </div>
-     <div class="action mob">
-        <a class="action-logo" href="main-page.html"> Harbstone </a>
-        <a class="start-project" href="">
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 13 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 12L12 1" stroke="#FEFEFE" stroke-linejoin="round" />
-            <path d="M1 1L12 1L12 12" stroke="#FEFEFE" />
-          </svg>
-          Start Your Project
-        </a>
-      </div>
+    <div class="action mob">
+      <a class="action-logo" href="main-page.html"> Harbstone </a>
+      <a class="start-project" href="">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 12L12 1" stroke="#FEFEFE" stroke-linejoin="round" />
+          <path d="M1 1L12 1L12 12" stroke="#FEFEFE" />
+        </svg>
+        Start Your Project
+      </a>
+    </div>
   </div>
   <section class="bread">
     <div class="container">
@@ -344,7 +332,7 @@
         </div>
       </div>
     </section>
-    <section class="backstage">
+    <section class="backstage" style="display: none">
       <div class="container">
         <div class="backstage__body">
           <h2>Backstage</h2>
@@ -379,7 +367,7 @@
               <img src="images/dist/transform-item/4.png" alt="" />
             </div>
           </div>
-          <div class="design__body-about">
+          <div class="design__body-about" style="display: none">
             <div class="about-info">
               <h2>About work</h2>
               <p>
@@ -393,7 +381,7 @@
               <img src="images/dist/transform-item/5.png" alt="" />
             </div>
           </div>
-          <div class="full-item transform-item">
+          <div class="full-item transform-item" style="display: none">
             <img src="images/dist/transform-item/6.png" alt="" />
           </div>
           <div class="design__body-idea">
@@ -419,7 +407,7 @@
               <div class="item transform-item">
                 <img src="images/dist/transform-item/8.png" alt="" />
               </div>
-              <div class="item transform-item">
+              <div class="item transform-item" style="display: none">
                 <img src="images/dist/transform-item/9.png" alt="" />
               </div>
             </div>
@@ -482,58 +470,64 @@
         </div>
       </div>
     </section>
-    <section class="offers">
-      <div class="offers__body">
-        <h2>Explore more</h2>
-        <div class="splide offers__splide" role="group" aria-label="Splide Basic HTML Example">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="images/dist/our/mickey.webp" alt="">
-                <button class="button-view">
-                  <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                      fill="#FEFEFE" />
-                  </svg>
-                  Watch now
-                </button>
-                <div class="information">
-                  <h3>Name</h3>
-                  <p>Commercial video-content for bet company with Mickey Rourke</p>
+    <section class="works">
+      <div class="container">
+        <div class="works__body">
+          <div class="works__body-information">
+            <div class="title">
+              <h2>Explore more</h2>
+            </div>
+          </div>
+          <div class="works__body-frame explore">
+            <div class="works-frame-sction current">
+              <a href="" class="work transform-item" data-video-playing="false">
+                <div class="work-preview">
+                  <img class="preview-image" src="images/dist/our/22bet.webp" alt="" />
+                  <video preload="none" playsinline webkit-playsinline class="preview-video" loop muted>
+                    <source data-src="images/dist/new_video/22bet.webm" type="video/webm" />
+                  </video>
+                  <button class="work-preview-play">
+                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                        fill="#FEFEFE" />
+                    </svg>
+                    Watch now
+                  </button>
+                  <div class="work-information">
+                    <h3>MelBet</h3>
+                    <p>
+                      Commercial video-content for bet company with Mickey
+                      Rourke
+                    </p>
+                  </div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="images/dist/our/mickey.webp" alt="">
-                <button class="button-view">
-                  <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                      fill="#FEFEFE" />
-                  </svg>
-                  Watch now
-                </button>
-                <div class="information">
-                  <h3>Name</h3>
-                  <p>Commercial video-content for bet company with Mickey Rourke</p>
+
+              </a>
+              <a href="" class="work transform-item" data-video-playing="false">
+                <div class="work-preview">
+                  <img class="preview-image" src="images/dist/our/optibet-1.webp" alt="" />
+                  <video preload="none" playsinline webkit-playsinline class="preview-video" loop muted>
+                    <source data-src="images/dist/new_video/optibet-1.webm" type="video/webm" />
+                  </video>
+                  <button class="work-preview-play">
+                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
+                        fill="#FEFEFE" />
+                    </svg>
+                    Watch now
+                  </button>
+                  <div class="work-information">
+                    <h3>ARIS</h3>
+                    <p>
+                      Commercial video-content for bet company with Mickey
+                      Rourke
+                    </p>
+                  </div>
                 </div>
-              </li>
-              <li class="splide__slide">
-                <img src="images/dist/our/mickey.webp" alt="">
-                <button class="button-view">
-                  <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M0 11.2679V1.77296C0 0.994204 0.85084 0.514306 1.5173 0.917161L9.55152 5.77359C10.2027 6.1672 10.1932 7.11497 9.53422 7.49542L1.5 12.134C0.833333 12.5189 0 12.0377 0 11.2679Z"
-                      fill="#FEFEFE" />
-                  </svg>
-                  Watch now
-                </button>
-                <div class="information">
-                  <h3>Name</h3>
-                  <p>Commercial video-content for bet company with Mickey Rourke</p>
-                </div>
-              </li>
-            </ul>
+              </a>
+            </div>
           </div>
         </div>
       </div>
